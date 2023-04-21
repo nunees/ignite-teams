@@ -21,7 +21,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       ></StatusBar>
-      { fontsLoaded ? <Groups /> : <Loading /> }
+      {fontsLoaded ? <Groups /> : <Loading />}
     </ThemeProvider>
   );
 }
