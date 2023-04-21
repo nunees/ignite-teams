@@ -1,5 +1,5 @@
-import { TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
+import { TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 
 export type ButtonIconTypeStyleProps = "PRIMARY" | "SECONDARY";
@@ -12,10 +12,10 @@ export const Container = styled(TouchableOpacity)`
   width: 56px;
   height: 56px;
 
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
-  margin-left: 12px;
+  margin-left: 15px;
 `;
 
 export const Icon = styled(MaterialIcons).attrs<Props>(({ theme, type }) => ({
