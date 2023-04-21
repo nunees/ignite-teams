@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FlatList } from "react-native";
 import { GroupCard } from "@components/GroupCard";
 import { Header } from "@components/Header";
-import { Highlight } from "@components/highlight";
+import { Highlight } from "@components/Highlight";
 import { Container } from "./styles";
 import { ListEmpty } from "@components/ListEmpty";
 import { Button } from "@components/Button";
