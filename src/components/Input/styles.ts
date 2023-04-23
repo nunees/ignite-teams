@@ -3,7 +3,6 @@ import { TextInput } from "react-native";
 
 export const Container = styled(TextInput)`
   flex: 1;
-  margin-top: 20px;
   min-height: 56px;
   max-height: 56px;
 

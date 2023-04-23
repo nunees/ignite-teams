@@ -12,7 +12,7 @@ export const Container = styled(TouchableOpacity)`
   width: 56px;
   height: 56px;
 
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 
   margin-left: 15px;
