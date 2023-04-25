@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Form, HeaderList, NumbersOfPlayers } from "./styles";
+import { Container, Form, HeaderList, NumberOfPlayers } from "./styles";
 import { ButtonIcon } from "@components/ButtonIcon";
 import { Header } from "@components/Header";
 import { Highlight } from "@components/Highlight";
@@ -13,10 +13,10 @@ import { Button } from "@components/Button";
 export function Players() {
   const [team, setTeam] = useState("Time A");
   const [players, setPlayers] = useState([
-    // "Rodrigo",
-    // "Diego",
-    // "Vinicius",
-    // "Felipe",
+    "Rodrigo",
+    "Diego",
+    "Vinicius",
+    "Felipe",
   ]);
   return (
     <Container>
@@ -44,7 +44,7 @@ export function Players() {
           horizontal
         />
 
-        <NumbersOfPlayers>{players.length}</NumbersOfPlayers>
+        <NumberOfPlayers>{players.length}</NumberOfPlayers>
       </HeaderList>
       <FlatList
         data={players}
