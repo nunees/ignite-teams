@@ -1,10 +1,16 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { GROUP_COLLECTION } from "@storage/storageConfig";
-import { groupGetAll } from "./groupGetAll";
+import { AppError } from "@utils/AppError";
+import { groupsGetAll } from "./groupsGetAll";
 
 export async function groupCreate(newGroup: string) {
   try {
-    const storageGroups = await groupGetAll();
+    const storageGroups = await groupsGetAll();
+
+    const groupAlredyExists = storageGroups.includes(newGroup);
+
+    if (groupAlredyExists)
+      throw new AppError("Já existe um grupo cadastrado com esse nome");
 
     const storage = JSON.stringify([...storageGroups, newGroup]);
 
